@@ -26,7 +26,7 @@ languageName = "简体中文"
     # LoveIt 新增 | 0.2.0 页面头部导航栏标题配置
     [params.header.title]
       # LOGO 的 URL
-      logo = "/images/avatar.png"
+      logo = "images/avatar.png"
       # 标题名称
       name = "Wangmbo"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
@@ -46,7 +46,7 @@ languageName = "简体中文"
     # Gravatar 邮箱，用于优先在主页显示的头像
     gravatarEmail = ""
     # 主页显示头像的 URL
-    avatarURL = "/images/avatar.png"
+    avatarURL = "images/avatar.png"
     # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
     title = ""
     # 主页显示的网站副标题 (允许 HTML 格式)
@@ -104,8 +104,4 @@ languageName = "简体中文"
   #  搜索结果中高亮部分的 HTML 标签
   highlightTag = "em"
   #  是否在搜索索引中使用基于 baseURL 的绝对路径
-  absoluteURL = false
-
-[markup.goldmark]
-    [markup.goldmark.renderer]
-        unsafe = true
+  absoluteURL = true
