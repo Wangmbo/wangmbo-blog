@@ -104,4 +104,9 @@ languageName = "简体中文"
   #  搜索结果中高亮部分的 HTML 标签
   highlightTag = "em"
   #  是否在搜索索引中使用基于 baseURL 的绝对路径
-  absoluteURL = true
+  absoluteURL = false
+  
+  [params.search.algolia]
+    index = "blog"
+    appID = "4ONPMOR360"
+    searchKey = "6f705d88b1907bc738318da1cb174b3c"
