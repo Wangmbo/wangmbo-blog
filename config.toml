@@ -26,7 +26,7 @@ languageName = "简体中文"
     # LoveIt 新增 | 0.2.0 页面头部导航栏标题配置
     [params.header.title]
       # LOGO 的 URL
-      logo = "images/avatar.png"
+      # logo = "images/avatar.png"
       # 标题名称
       name = "Wangmbo"
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
@@ -71,7 +71,7 @@ languageName = "简体中文"
     name = "文章"
     url = "/posts/"
     # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
-    title = ""
+    title = "技术相关"
 
 # Hugo 解析文档的配置
 [markup]
@@ -89,10 +89,12 @@ languageName = "简体中文"
 # 搜索功能
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  
+
 [params.search]
   enable = true
   # 搜索引擎的类型 ["lunr", "algolia"]
-  type = "lunr"
+  type = "algolia"
   # 文章内容最长索引长度
   contentLength = 4000
   # 搜索框的占位提示语
@@ -105,3 +107,7 @@ languageName = "简体中文"
   highlightTag = "em"
   #  是否在搜索索引中使用基于 baseURL 的绝对路径
   absoluteURL = true
+[params.search.algolia]
+index = ""
+appID = ""
+searchKey = ""
