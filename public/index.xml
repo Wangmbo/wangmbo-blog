@@ -4,15 +4,7 @@
         <link>https://www.wangmbo.com/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>wm-wave@163.com (Wangmbo)</managingEditor>
-            <webMaster>wm-wave@163.com (Wangmbo)</webMaster><lastBuildDate>Thu, 04 Aug 2022 23:19:53 &#43;0800</lastBuildDate>
+            <webMaster>wm-wave@163.com (Wangmbo)</webMaster>
             <atom:link href="https://www.wangmbo.com/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>First_post</title>
-    <link>https://www.wangmbo.com/posts/first_post/</link>
-    <pubDate>Thu, 04 Aug 2022 23:19:53 &#43;0800</pubDate>
-    <author>Wangmbo</author>
-    <guid>https://www.wangmbo.com/posts/first_post/</guid>
-    <description><![CDATA[测试]]></description>
-</item>
-</channel>
+        </channel>
 </rss>
