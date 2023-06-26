@@ -97,7 +97,14 @@
         data-sizes="auto"
         alt="/images/avatar.png"
         title="/images/avatar.png" width="1000" height="1000" /></a></div><h1 class="home-title">Wangmbo</h1><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="github" rel="me"></a><a href="https://github.com/https://github.com/Wangmbo" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
-</div></div>
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/pinia-use/">pinia使用手册</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/Wangmbo" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Wangmbo</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-14">2023-01-14</time></span>&nbsp;<span class="post-category">included in <a href="/categories/note/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>笔记</a></span></div><div class="content">前言 Store 是什么 Store是一个保存状态和业务逻辑的实体，它并不与你的组件树绑定，它承载着全局的状态
+什么时候使用Store 一个Store应该包含可以在整个应用中访问的数据，例如显示在导航栏中的用户信息，以及需要通过页面保存的数据，例如一个非常复杂的多步骤表单。应该避免在Store中引入那些本可以在组件中保存的本地数据，例如，一个元素在页面中的可见性。
+使用 创建pinia实例(根store)，然后将其挂载到app上 // mian.ts import { createPinia } from &#39;pinia&#39; const pinia = createPinia() app.use(pinia) 声明store // useTodoList.ts import { defineStore } from &#39;pinia&#39; export const useTodoList = defineStore(&#39;todoList&#39;, { // state // getters // actions }) 使用store import { useTodoList } from &#39;@/store/useTodoList&#39; const todoListStore = useTodoList() 修改state actions中修改 直接修改 $patch $reset 订阅state $subscribe store.$subscribe((mutation, state) =&gt; { }) watch 监听 插件的使用 import { createPinia } from &#39;pinia&#39; // 创建的每个 store 中都会添加一个名为 `secret` 的属性。 // 在安装此插件后，插件可以保存在不同的文件中 function SecretPiniaPlugin() { return { secret: &#39;the cake is a lie&#39; } } const pinia = createPinia() // 将该插件交给 Pinia pinia.</div><div class="post-footer">
+        <a href="/posts/pinia-use/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pinia/">pinia</a></div></div>
+</article></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.102.0-DEV">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/Wangmbo" target="_blank">Wangmbo</a></span></div>
