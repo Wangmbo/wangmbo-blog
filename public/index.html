@@ -104,6 +104,10 @@
 使用 创建pinia实例(根store)，然后将其挂载到app上 // mian.ts import { createPinia } from &#39;pinia&#39; const pinia = createPinia() app.use(pinia) 声明store // useTodoList.ts import { defineStore } from &#39;pinia&#39; export const useTodoList = defineStore(&#39;todoList&#39;, { // state // getters // actions }) 使用store import { useTodoList } from &#39;@/store/useTodoList&#39; const todoListStore = useTodoList() 修改state actions中修改 直接修改 $patch $reset 订阅state $subscribe store.$subscribe((mutation, state) =&gt; { }) watch 监听 插件的使用 import { createPinia } from &#39;pinia&#39; // 创建的每个 store 中都会添加一个名为 `secret` 的属性。 // 在安装此插件后，插件可以保存在不同的文件中 function SecretPiniaPlugin() { return { secret: &#39;the cake is a lie&#39; } } const pinia = createPinia() // 将该插件交给 Pinia pinia.</div><div class="post-footer">
         <a href="/posts/pinia-use/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/pinia/">pinia</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/mobile/fit/"></a>
+    </h1><div class="post-meta"><span class="post-author"><a href="https://github.com/Wangmbo" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Wangmbo</a></span>&nbsp;<span class="post-publish">published on <time datetime="0001-01-01">0001-01-01</time></span></div><div class="content"></div><div class="post-footer">
+        <a href="/posts/mobile/fit/">Read More</a></div>
 </article></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.102.0-DEV">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
