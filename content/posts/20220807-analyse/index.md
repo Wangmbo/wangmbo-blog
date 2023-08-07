@@ -2,7 +2,7 @@
 title: "20220807-复盘H1"
 date: 2022-08-07T16:54:27+08:00
 draft: false
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 categories: ["analyse"]
 ---
 > 复盘最近几周工作、学习、健身等，主要有两个关键字`执行力`和`专注力`
