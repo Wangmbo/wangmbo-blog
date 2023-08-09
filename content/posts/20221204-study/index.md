@@ -1,3 +1,10 @@
+---
+title: "如何学习"
+date: 2022-08-07T16:54:27+08:00
+draft: false
+hiddenFromHomePage: true
+categories: ["Read notes"]
+---
 + 当你学习一些新的东西，尤其是比较难的东西的时候，你的大脑需要一种，在两种学习模式（专注和发散）之间来回切换的能力。
 + 番茄工作法，克服拖延症
   + 集中精力25min =》 小奖励
